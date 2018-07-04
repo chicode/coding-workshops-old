@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.reading {
+  h1 {
+    text-align: left;
+    margin: 30px 0;
+    font-size: 70px;
+  }
+
+  h2 {
+    margin: 20px 0;
+  }
+  padding: 30px;
+  flex-basis: 30%;
+}
+
+.control {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+}
+
+.menubar {
+  background: #5b6f81;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+}
+
+.console {
+  background: #000000;
+  flex-basis: 30%;
+}
+
+.code {
+  font-family: Source Code Pro;
+  // background: #464653;
+  flex: 1;
+}

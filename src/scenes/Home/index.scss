@@ -1,0 +1,38 @@
+@import '~styles/definitions.global.scss';
+
+.root {
+  padding: 100px 300px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+  img {
+    margin-left: 80px;
+  }
+}
+
+.workshop-tiles {
+  display: flex;
+}
+
+.workshop-tile {
+  @include tile;
+
+  display: block;
+  border-top: 10px solid #ca9999;
+  padding: 10px;
+
+  p {
+    margin: 10px 0;
+  }
+
+  .extra-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

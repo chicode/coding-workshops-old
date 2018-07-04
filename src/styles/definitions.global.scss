@@ -1,0 +1,41 @@
+$color: (
+  background: white,
+  foreground: #e5e5e5,
+  primary: #e85a5a,
+  secondary1: #b9a4db,
+  secondary2: #e9cf8b,
+  primaryfont: black,
+  secondaryfont: #7a7a7a,
+  error: #ff5050,
+  border: black
+);
+
+$font-size: 50px, 36px, 18px;
+
+$border-radius: 3px;
+$border-width: 6px;
+
+@mixin standard-border {
+  border: $border-width solid map_get($color, border);
+  border-radius: $border-radius;
+}
+
+@mixin breakpoint($size) {
+  @if $size == 1 {
+    @media (max-width: 1300px) {
+      @content;
+    }
+  } @else if $size == 2 {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+}
+
+$shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
+@mixin tile {
+  box-shadow: $shadow;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}

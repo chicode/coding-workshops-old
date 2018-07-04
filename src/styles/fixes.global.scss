@@ -1,0 +1,43 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body * {
+  margin: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+button,
+input,
+select {
+  border: 0;
+}
+button:focus,
+input:focus,
+select:focus {
+  outline: 0;
+}
+p {
+  cursor: default;
+}
+button,
+img {
+  display: block;
+}
+button img {
+  margin: auto;
+}
+button * {
+  user-select: none;
+  user-drag: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+}
